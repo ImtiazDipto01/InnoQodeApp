@@ -1,0 +1,2 @@
+rootProject.name = "InnoQodeTest"
+include ':app'
