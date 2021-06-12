@@ -4,6 +4,7 @@
     <string name="hint_email">Enter your email</string>
     <string name="text_password">Password</string>
     <string name="text_log_in">Log In</string>
+    <string name="text_sign_up">Sign Up</string>
     <string name="text_dont_have_acc">Don\'t have any account? Sign up here.</string>
     <string name="hint_password">Enter your password</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -14,4 +15,12 @@
     <string name="text_last_name">Last Name</string>
     <string name="hint_enter_last_name">Enter Your Last Name</string>
     <string name="hint_enter_your_email">"Enter your email "</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="err_email">Please Provide a valid email</string>
+    <string name="err_password">Password can not be less than 6 charcter</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancle">Cancle</string>
+    <string name="err_something_went_wrong">Something went wrong</string>
+    <string name="err_name">Please Provide Valid Name</string>
 </resources>
