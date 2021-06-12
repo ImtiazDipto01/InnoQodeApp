@@ -14,6 +14,8 @@
     <color name="colorAccent">@color/black</color>
     <color name="grey_text">#555555</color>
     <color name="grey_hint">#52000000</color>
+    <color name="grey_light">#eeeeee</color>
+    <color name="grey_2">#757575</color>
 
 
 </resources>

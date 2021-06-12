@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import com.imtiaz.innoqodetest.MainActivity
+import com.imtiaz.innoqodetest.ui.MainActivity
 import com.imtiaz.innoqodetest.R
 import com.imtiaz.innoqodetest.databinding.FragmentLoginBinding
 import com.imtiaz.innoqodetest.ui.entity.LoginValidation

@@ -6,8 +6,8 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.imtiaz.innoqodetest.App
 import com.imtiaz.innoqodetest.R
-import com.imtiaz.innoqodetest.data.AuthRepository
-import com.imtiaz.innoqodetest.data.model.AuthResponse
+import com.imtiaz.innoqodetest.data.repository.AuthRepository
+import com.imtiaz.innoqodetest.data.remote.entity.AuthResponse
 import com.imtiaz.innoqodetest.ui.entity.LoginValidation
 import com.imtiaz.innoqodetest.utils.enums.ValidationErrTag
 import com.imtiaz.taskmanager.utils.Resource

@@ -23,4 +23,8 @@
     <string name="cancle">Cancle</string>
     <string name="err_something_went_wrong">Something went wrong</string>
     <string name="err_name">Please Provide Valid Name</string>
+    <string name="text_innoqode_test">InnoQode Test</string>
+    <string name="demo_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="demo_date">12 Jan, 2021</string>
+    <string name="demo_text_2">Lorem Ipsum is simply dummy</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.imtiaz.innoqodetest.data.model
+package com.imtiaz.innoqodetest.data.remote.entity
 
 import com.google.firebase.auth.FirebaseUser
 

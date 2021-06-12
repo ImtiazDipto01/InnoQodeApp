@@ -1,4 +1,4 @@
-package com.imtiaz.innoqodetest.data
+package com.imtiaz.innoqodetest.data.repository
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
@@ -7,7 +7,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-import com.imtiaz.innoqodetest.data.model.AuthResponse
+import com.imtiaz.innoqodetest.data.remote.entity.AuthResponse
 import com.imtiaz.taskmanager.utils.Resource
 
 class AuthRepository(val auth: FirebaseAuth) {

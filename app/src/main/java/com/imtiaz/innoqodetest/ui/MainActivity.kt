@@ -1,4 +1,4 @@
-package com.imtiaz.innoqodetest
+package com.imtiaz.innoqodetest.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.imtiaz.innoqodetest.R
 import com.imtiaz.innoqodetest.databinding.ActivityMainBinding
 import com.imtiaz.innoqodetest.ui.auth.AuthViewModel
 import com.imtiaz.innoqodetest.utils.listeners.LoginSuccess
