@@ -1,11 +1,15 @@
 package com.imtiaz.innoqodetest.data.local.entity
 
+import android.os.Parcel
+import android.os.Parcelable
 import androidx.annotation.NonNull
 import androidx.annotation.Nullable
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @Entity(tableName = "post")
 data class BlogPost(
 
@@ -30,4 +34,4 @@ data class BlogPost(
     @ColumnInfo(name = "img_url")
     val imageUrl: String? = null
 
-)
+): Parcelable

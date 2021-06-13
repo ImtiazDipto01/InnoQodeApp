@@ -4,10 +4,12 @@ import android.app.ProgressDialog
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.imtiaz.innoqodetest.R
 
@@ -70,6 +72,17 @@ open class BaseFragment : Fragment() {
                 progressDialog.dismiss()
 
         } catch (exp: Exception) {
+        }
+    }
+
+    fun setupToolBar(toolbar: MaterialToolbar, title: String = "", colorId: Int = R.color.black) {
+        toolbar.apply {
+            setTitle(title)
+            setTitleTextColor(ContextCompat.getColor(requireContext(), colorId))
+            setNavigationIconTint(ContextCompat.getColor(requireContext(), colorId))
+            setNavigationOnClickListener {
+                requireActivity().onBackPressed()
+            }
         }
     }
 

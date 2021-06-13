@@ -12,9 +12,10 @@ import androidx.lifecycle.Observer
 import com.imtiaz.innoqodetest.R
 import com.imtiaz.innoqodetest.data.local.entity.BlogPost
 import com.imtiaz.innoqodetest.databinding.FragmentHomeBinding
+import com.imtiaz.taskmanager.ui.base.BaseFragment
 import com.imtiaz.taskmanager.utils.Resource
 
-class HomeFragment : Fragment() {
+class HomeFragment : BaseFragment() {
 
     private var binding: FragmentHomeBinding? = null
     private val viewModel: HomeViewModel by viewModels()
@@ -40,7 +41,7 @@ class HomeFragment : Fragment() {
         binding?.apply {
             rvPosts.apply {
                 homeAdapter = HomeAdapter(list) {
-
+                    navigateTo(HomeFragmentDirections.actionHomeFragmentToBlogPostDetailsFragment(it))
                 }
                 adapter = homeAdapter
             }
@@ -50,7 +51,7 @@ class HomeFragment : Fragment() {
     private fun observePosts() {
         viewModel.postsResponse.observe(viewLifecycleOwner, Observer {
             binding?.apply {
-                when(it.status){
+                when (it.status) {
                     Resource.Status.LOADING -> {
                         updateLoadingView(true)
                     }
@@ -73,13 +74,12 @@ class HomeFragment : Fragment() {
 
     private fun updateLoadingView(isLoading: Boolean) = binding?.apply {
         layoutLoading.homeShimmer.apply {
-            if(isLoading){
+            isVisible = if (isLoading) {
                 startShimmer()
-                isVisible = true
-            }
-            else {
+                true
+            } else {
                 stopShimmer()
-                isVisible = false
+                false
             }
         }
     }
